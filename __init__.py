@@ -1,4 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
+import os
 
 
 class Stop(MycroftSkill):
