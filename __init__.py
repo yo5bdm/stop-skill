@@ -1,5 +1,6 @@
 from mycroft import MycroftSkill, intent_file_handler
 import os
+import time
 
 
 class Stop(MycroftSkill):
@@ -9,6 +10,7 @@ class Stop(MycroftSkill):
     @intent_file_handler('stop.intent')
     def handle_stop(self, message):
         self.speak_dialog('stop')
+        time.sleep(10)
         os.system('shutdown -P now')
 
 
