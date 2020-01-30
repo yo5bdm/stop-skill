@@ -8,6 +8,7 @@ class Stop(MycroftSkill):
     @intent_file_handler('stop.intent')
     def handle_stop(self, message):
         self.speak_dialog('stop')
+        os.system('shutdown -P now')
 
 
 def create_skill():
