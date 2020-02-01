@@ -11,7 +11,7 @@ class Stop(MycroftSkill):
     def handle_stop(self, message):
         self.speak_dialog('stop')
         time.sleep(10)
-        os.system('shutdown -P now')
+        os.system('shutdown now')
 
 
 def create_skill():
